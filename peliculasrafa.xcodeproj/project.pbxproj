@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2F9B46218A00AA00CA120E /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F9B45218A00AA00CA120E /* Datos.swift */; };
+		3D2F9B48218A016D00CA120E /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */; };
+		3D2F9B62218A0D6500CA120E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2F9B55218A0D2A00CA120E /* Alamofire.framework */; };
+		3D2F9B63218A0D6500CA120E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2F9B55218A0D2A00CA120E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3D4DA0BF2189FC3D004A781A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA0BE2189FC3D004A781A /* AppDelegate.swift */; };
 		3D4DA0C12189FC3D004A781A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA0C02189FC3D004A781A /* ViewController.swift */; };
 		3D4DA0C42189FC3D004A781A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DA0C22189FC3D004A781A /* Main.storyboard */; };
@@ -14,9 +18,66 @@
 		3D4DA0C92189FC42004A781A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D4DA0C72189FC42004A781A /* LaunchScreen.storyboard */; };
 		3D4DA0D42189FC42004A781A /* peliculasrafaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA0D32189FC42004A781A /* peliculasrafaTests.swift */; };
 		3D4DA0DF2189FC42004A781A /* peliculasrafaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA0DE2189FC42004A781A /* peliculasrafaUITests.swift */; };
+		3D4DA0F32189FFAF004A781A /* Pelicula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4DA0F22189FFAF004A781A /* Pelicula.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3D2F9B54218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3D2F9B56218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		3D2F9B58218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		3D2F9B5A218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		3D2F9B5C218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		3D2F9B5E218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		3D2F9B60218A0D2A00CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		3D2F9B64218A0D6500CA120E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 		3D4DA0D02189FC42004A781A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D4DA0B32189FC3D004A781A /* Project object */;
@@ -33,7 +94,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3D2F9B66218A0D6600CA120E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D2F9B63218A0D6500CA120E /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3D2F9B45218A00AA00CA120E /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
+		3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
+		3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3D4DA0BB2189FC3D004A781A /* peliculasrafa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = peliculasrafa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4DA0BE2189FC3D004A781A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D4DA0C02189FC3D004A781A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +125,7 @@
 		3D4DA0DA2189FC42004A781A /* peliculasrafaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = peliculasrafaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4DA0DE2189FC42004A781A /* peliculasrafaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = peliculasrafaUITests.swift; sourceTree = "<group>"; };
 		3D4DA0E02189FC42004A781A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D4DA0F22189FFAF004A781A /* Pelicula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pelicula.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2F9B62218A0D6500CA120E /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +154,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D2F9B4A218A0D2800CA120E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D2F9B55218A0D2A00CA120E /* Alamofire.framework */,
+				3D2F9B57218A0D2A00CA120E /* Alamofire iOS Tests.xctest */,
+				3D2F9B59218A0D2A00CA120E /* Alamofire.framework */,
+				3D2F9B5B218A0D2A00CA120E /* Alamofire macOS Tests.xctest */,
+				3D2F9B5D218A0D2A00CA120E /* Alamofire.framework */,
+				3D2F9B5F218A0D2A00CA120E /* Alamofire tvOS Tests.xctest */,
+				3D2F9B61218A0D2A00CA120E /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3D4DA0B22189FC3C004A781A = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +191,14 @@
 		3D4DA0BD2189FC3D004A781A /* peliculasrafa */ = {
 			isa = PBXGroup;
 			children = (
-				3D4DA0BE2189FC3D004A781A /* AppDelegate.swift */,
-				3D4DA0C02189FC3D004A781A /* ViewController.swift */,
+				3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */,
+				3D4DA0F12189FF62004A781A /* Model */,
+				3D4DA0F02189FF3E004A781A /* Resources */,
+				3D4DA0EF2189FF36004A781A /* App */,
+				3D4DA0EE2189FF32004A781A /* ViewControllers */,
+				3D4DA0EC2189FDCA004A781A /* Views */,
 				3D4DA0C22189FC3D004A781A /* Main.storyboard */,
-				3D4DA0C52189FC42004A781A /* Assets.xcassets */,
 				3D4DA0C72189FC42004A781A /* LaunchScreen.storyboard */,
-				3D4DA0CA2189FC42004A781A /* Info.plist */,
 			);
 			path = peliculasrafa;
 			sourceTree = "<group>";
@@ -125,6 +221,48 @@
 			path = peliculasrafaUITests;
 			sourceTree = "<group>";
 		};
+		3D4DA0EC2189FDCA004A781A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3D4DA0EE2189FF32004A781A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA0C02189FC3D004A781A /* ViewController.swift */,
+				3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D4DA0EF2189FF36004A781A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA0CA2189FC42004A781A /* Info.plist */,
+				3D4DA0BE2189FC3D004A781A /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3D4DA0F02189FF3E004A781A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA0C52189FC42004A781A /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3D4DA0F12189FF62004A781A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D4DA0F22189FFAF004A781A /* Pelicula.swift */,
+				3D2F9B45218A00AA00CA120E /* Datos.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +273,12 @@
 				3D4DA0B72189FC3D004A781A /* Sources */,
 				3D4DA0B82189FC3D004A781A /* Frameworks */,
 				3D4DA0B92189FC3D004A781A /* Resources */,
+				3D2F9B66218A0D6600CA120E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D2F9B65218A0D6500CA120E /* PBXTargetDependency */,
 			);
 			name = peliculasrafa;
 			productName = peliculasrafa;
@@ -215,6 +355,12 @@
 			mainGroup = 3D4DA0B22189FC3C004A781A;
 			productRefGroup = 3D4DA0BC2189FC3D004A781A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D2F9B4A218A0D2800CA120E /* Products */;
+					ProjectRef = 3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3D4DA0BA2189FC3D004A781A /* peliculasrafa */,
@@ -223,6 +369,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D2F9B55218A0D2A00CA120E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D2F9B54218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B57218A0D2A00CA120E /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 3D2F9B56218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B59218A0D2A00CA120E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D2F9B58218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B5B218A0D2A00CA120E /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 3D2F9B5A218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B5D218A0D2A00CA120E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D2F9B5C218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B5F218A0D2A00CA120E /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 3D2F9B5E218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D2F9B61218A0D2A00CA120E /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D2F9B60218A0D2A00CA120E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3D4DA0B92189FC3D004A781A /* Resources */ = {
@@ -256,8 +454,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4DA0F32189FFAF004A781A /* Pelicula.swift in Sources */,
+				3D2F9B46218A00AA00CA120E /* Datos.swift in Sources */,
 				3D4DA0C12189FC3D004A781A /* ViewController.swift in Sources */,
 				3D4DA0BF2189FC3D004A781A /* AppDelegate.swift in Sources */,
+				3D2F9B48218A016D00CA120E /* CeldaPeliculaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +481,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3D2F9B65218A0D6500CA120E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 3D2F9B64218A0D6500CA120E /* PBXContainerItemProxy */;
+		};
 		3D4DA0D12189FC42004A781A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3D4DA0BA2189FC3D004A781A /* peliculasrafa */;
@@ -429,6 +635,7 @@
 		3D4DA0E42189FC42004A781A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = peliculasrafa/Info.plist;
@@ -446,6 +653,7 @@
 		3D4DA0E52189FC42004A781A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = peliculasrafa/Info.plist;
