@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D1D1681218B951E00B493A8 /* DetallesPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D1680218B951E00B493A8 /* DetallesPeliculaController.swift */; };
 		3D2F9B46218A00AA00CA120E /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F9B45218A00AA00CA120E /* Datos.swift */; };
 		3D2F9B48218A016D00CA120E /* CeldaPeliculaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */; };
 		3D2F9B62218A0D6500CA120E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2F9B55218A0D2A00CA120E /* Alamofire.framework */; };
@@ -109,6 +110,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D1D1680218B951E00B493A8 /* DetallesPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesPeliculaController.swift; sourceTree = "<group>"; };
 		3D2F9B45218A00AA00CA120E /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 		3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaPeliculaController.swift; sourceTree = "<group>"; };
 		3D2F9B49218A0D2700CA120E /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -233,6 +235,7 @@
 			children = (
 				3D4DA0C02189FC3D004A781A /* ViewController.swift */,
 				3D2F9B47218A016D00CA120E /* CeldaPeliculaController.swift */,
+				3D1D1680218B951E00B493A8 /* DetallesPeliculaController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 			files = (
 				3D4DA0F32189FFAF004A781A /* Pelicula.swift in Sources */,
 				3D2F9B46218A00AA00CA120E /* Datos.swift in Sources */,
+				3D1D1681218B951E00B493A8 /* DetallesPeliculaController.swift in Sources */,
 				3D4DA0C12189FC3D004A781A /* ViewController.swift in Sources */,
 				3D4DA0BF2189FC3D004A781A /* AppDelegate.swift in Sources */,
 				3D2F9B48218A016D00CA120E /* CeldaPeliculaController.swift in Sources */,

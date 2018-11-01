@@ -30,37 +30,45 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var aiCargando: UIActivityIndicatorView!
     @IBOutlet weak var txtBusqueda: UITextField!
     @IBOutlet weak var tvResultadosPeliculas: UITableView!
+    let urlBase = "https://www.omdbapi.com/?apikey=4799d46a&s=godfather"
     @IBAction func doTapBuscarPelicula(_ sender: Any) {
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        Alamofire.request("https://www.omdbapi.com/?apikey=4799d46a&s=godfather").responseJSON {
+        aiCargando.startAnimating()
+        var busqueda = txtBusqueda.text!
+        busqueda = busqueda.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed)!
+        Alamofire.request("\(urlBase)\(busqueda)").responseJSON{
             response in
             
             Datos.resultadosPeliculas.removeAll()
             
-            if let dictResponse = response.result.value as? NSDictionary {
+            if let dictResponse = response.result.value as?
+                NSDictionary{
                 if let arrResultados = dictResponse.value(forKey: "Search") as? NSArray {
                     for resultado in arrResultados {
-                        if let dictResultado = resultado as?
-                            NSDictionary {
+                        if let dictResultado = resultado as? NSDictionary {
                             let nuevoResultado = Pelicula(diccionario: dictResultado)
-                            
                             Datos.resultadosPeliculas.append(nuevoResultado)
                         }
-                }
+                    }
                     self.tvResultadosPeliculas.reloadData()
+                }
             }
+            self.aiCargando.stopAnimating()
         }
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-        func didReceiveMemoryWarning() {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+}
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destino = segue.destination as? DetallespeliculaController {
+            destino.pelicula =
+                Datos.resultadosPeliculas[(tvResultadosPeliculas.indexPathForSelectedRow?.row)!]
+        }
     }
 }
-

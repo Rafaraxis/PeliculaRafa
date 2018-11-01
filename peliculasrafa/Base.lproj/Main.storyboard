@@ -70,6 +70,7 @@
                                         <connections>
                                             <outlet property="lblAño" destination="1GZ-8k-FKZ" id="iOP-c9-1pP"/>
                                             <outlet property="lblTitulo" destination="kZh-nl-gYY" id="GF7-gt-S2c"/>
+                                            <segue destination="kAr-28-Ayl" kind="show" id="CsQ-Ew-ox1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -103,6 +104,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
+        </scene>
+        <!--Detallespelicula Controller-->
+        <scene sceneID="gxP-bG-MBb">
+            <objects>
+                <viewController id="kAr-28-Ayl" customClass="DetallespeliculaController" customModule="peliculasrafa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fv6-e3-VQE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yn-Jz-09f">
+                                <rect key="frame" x="317" y="90" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Titulo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-Sq-fmP">
+                                <rect key="frame" x="122" y="34" width="165" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Director" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fP6-5l-VaW">
+                                <rect key="frame" x="16" y="192" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clasificacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-as-QJE">
+                                <rect key="frame" x="16" y="241" width="97" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duración" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbw-gS-LxZ">
+                                <rect key="frame" x="16" y="288" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U3-XF-efP">
+                                <rect key="frame" x="5" y="0.0" width="36" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Atras"/>
+                                <connections>
+                                    <action selector="doTapAtras:" destination="kAr-28-Ayl" eventType="touchUpInside" id="2HV-Oz-yVh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yue-Yy-gY4">
+                                <rect key="frame" x="16" y="150" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Rus-Sq-fmP" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="137" id="14e-XY-Jba"/>
+                            <constraint firstItem="Rus-Sq-fmP" firstAttribute="top" secondItem="WCS-U2-pbD" secondAttribute="top" constant="14" id="18D-St-KfC"/>
+                            <constraint firstItem="fP6-5l-VaW" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="16" id="3Ai-aG-hTH"/>
+                            <constraint firstItem="WCS-U2-pbD" firstAttribute="trailing" secondItem="8yn-Jz-09f" secondAttribute="trailing" constant="16" id="GR3-WU-0yX"/>
+                            <constraint firstItem="8yn-Jz-09f" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="317" id="HmC-rs-FUm"/>
+                            <constraint firstItem="2pY-as-QJE" firstAttribute="top" secondItem="fP6-5l-VaW" secondAttribute="bottom" constant="28" id="JrA-ao-8t6"/>
+                            <constraint firstItem="WCS-U2-pbD" firstAttribute="trailing" secondItem="Rus-Sq-fmP" secondAttribute="trailing" constant="137" id="KoX-Nt-gyT"/>
+                            <constraint firstItem="Yue-Yy-gY4" firstAttribute="top" secondItem="WCS-U2-pbD" secondAttribute="top" constant="130" id="LwR-Vq-5wz"/>
+                            <constraint firstItem="fP6-5l-VaW" firstAttribute="top" secondItem="Yue-Yy-gY4" secondAttribute="bottom" constant="21" id="Mgd-e9-nDD"/>
+                            <constraint firstItem="Pbw-gS-LxZ" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="16" id="Mgh-8H-yjN"/>
+                            <constraint firstItem="Yue-Yy-gY4" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="16" id="Ra2-x8-9m8"/>
+                            <constraint firstItem="2pY-as-QJE" firstAttribute="leading" secondItem="WCS-U2-pbD" secondAttribute="leading" constant="16" id="jdt-T0-f2f"/>
+                            <constraint firstItem="Pbw-gS-LxZ" firstAttribute="top" secondItem="2pY-as-QJE" secondAttribute="bottom" constant="26" id="tXw-I1-Vio"/>
+                            <constraint firstItem="8yn-Jz-09f" firstAttribute="top" secondItem="WCS-U2-pbD" secondAttribute="top" constant="70" id="tpq-Tc-dXS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WCS-U2-pbD"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblAño" destination="8yn-Jz-09f" id="WWZ-4a-dEj"/>
+                        <outlet property="lblClasificacion" destination="2pY-as-QJE" id="YeU-ND-U9o"/>
+                        <outlet property="lblDirector" destination="fP6-5l-VaW" id="3au-cm-ZHq"/>
+                        <outlet property="lblDuracion" destination="Pbw-gS-LxZ" id="VWQ-J1-ICw"/>
+                        <outlet property="lblGenero" destination="Yue-Yy-gY4" id="XPV-4H-Nmf"/>
+                        <outlet property="lblTitulo" destination="Rus-Sq-fmP" id="XS3-j5-lhp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg6-o9-sDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

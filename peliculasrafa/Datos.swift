@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 class Datos {
-    static var resultadosPeliculas : [Pelicula] = [Pelicula(titulo: "Space Jam", año: 1996), Pelicula(titulo: "Aladdin", año: 1992),]
+    static var resultadosPeliculas : [Pelicula] = []
 }

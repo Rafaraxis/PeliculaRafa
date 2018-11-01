@@ -12,6 +12,7 @@ class Pelicula {
     
     var titulo : String
     var año : Int
+    var id : String?
     var clasificacion : String?
     var genero : String?
     var director : String?
@@ -27,7 +28,12 @@ class Pelicula {
             titulo = valorTitulo
         }
         if let valorAño = diccionario.value(forKey: "Year") as? String {
-            año = Int(valorAño)!
+            let indiceFinal = valorAño.index(valorAño.startIndex,offsetBy: 4)
+            año = Int(valorAño[..<indiceFinal])!
+        }
+        if let imdbID = diccionario.value(forKey: "imdbID") as? String {
+            self.id = imdbID
         }
     }
 }
+
